@@ -153,7 +153,7 @@ a:hover {
 section {
     padding-top: 4vh;
     height: 96vh;
-    margin: 0 10rem;
+    margin: 0 5rem;
     box-sizing: border-box;
     min-height: fit-content;
     /* border: 1px solid skyblue; */
@@ -171,6 +171,14 @@ section {
     justify-content: center;
     gap: 5rem;
     height: 80vh;
+}
+
+.borderDiv {
+    display: flex;
+    gap: 5rem;
+    padding: 10rem;
+    border: 2px solid navy;
+    border-radius: 50rem;
 }
 
 .section__pic-container {
@@ -230,7 +238,7 @@ section {
 }
 
 .icon3 {
-    height: 3rem;
+    height: 3.5rem;
 }
 
 .icon4 {
@@ -246,7 +254,7 @@ section {
 .btn {
     font-weight: 600;
     transition: all 300ms ease;
-    padding: 1rem;
+    padding: 20px;
     width: 8rem;
     border-radius: 2rem;
 }
@@ -287,23 +295,26 @@ section {
 
 #about {
     position: relative;
+    /* border: 1px solid black; */
 }
 
 .about-containers {
+    /* border: 1px solid black; */
+    justify-content: center;
     gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    /* border: 1px solid red; */
 }
 
 .about-details-container {
-    justify-content: center;
-    flex-direction: column;
+    /* border: 1px solid black; */
+    padding: 10px;
+    gap: 2rem;
+
 }
 
 .about-containers, 
 .about-details-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 
 .about-pic {
@@ -317,13 +328,15 @@ section {
 }
 
 .details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 2rem;
-    flex: 1;
     background: white;
-    border-radius: 2rem;
+    border-radius: 1rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-    text-align: center;
 }
 
 .section-container {
@@ -335,6 +348,12 @@ section {
     height: 400px;
     width: 400px;
     margin: auto 0;
+}
+
+.Im_here {
+    text-align: center;
+    color: navy;
+    margin: 15px 0;
 }
 
 /* EXPERIENCE SECTION  */
@@ -351,24 +370,24 @@ section {
 }
 
 .experience-details-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    /* border: 1px solid black ; */
+    padding: 10px;
 }
 
 .article-container {
     display: flex;
+    border-radius: 5px;
     text-align: initial;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     gap: 2.5rem;
     justify-content: space-around;
 }
 
 article {
+    /* border: 1px solid black; */
     display: flex;
-    width: 10rem;
-    justify-content: space-around;
+    text-align: initial;
     gap: 0.5rem;
 }
 
@@ -388,9 +407,10 @@ article .icon {
 }
 
 .project-img {
-    border-radius: 2rem;
-    width: 70%;
-    height: 90%;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    width: 80%;
+    height: 80%;
 }
 
 .project-title {
@@ -401,10 +421,6 @@ article .icon {
 .project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
-}
-
-.details-container .project-2 {
-    margin-bottom: 17rem;
 }
 
 /* CONTACT SECTION  */
